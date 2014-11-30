@@ -39,4 +39,7 @@
 
 @property (nonatomic) double carbonoTotal;
 
+- (void)calculateCarbonoTotal;
+- (void)setCombustibleConsumido:(double)combustibleConsumido withTipo:(NSString *)tipo;
+
 @end

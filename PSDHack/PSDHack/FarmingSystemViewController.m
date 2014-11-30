@@ -133,6 +133,11 @@
     [self setupMapView];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [locationManager stopUpdatingLocation];
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"ShowQuestions"]) {
         QuestionsTableViewController *destinationVC = (QuestionsTableViewController *)segue.destinationViewController;

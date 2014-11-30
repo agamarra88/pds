@@ -7,6 +7,7 @@
 //
 
 #import "QuestionsTableViewController.h"
+#import "Farmer.h"
 
 @interface QuestionsTableViewController ()
 
@@ -43,7 +44,31 @@
 
 - (IBAction)done:(id)sender {
     //Call service
+    if (![self areQuestionsAnswered]) {
+        UIAlertView *errorAlert = [[UIAlertView alloc]
+                                   initWithTitle:@"Error" message:@"Por favor responder todas las preguntas" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [errorAlert show];
+        return;
+    }
+    Farmer *farmer = [Farmer shareFarmer];
+    farmer.cantidadHecatareas = [self.cantidadHectareas.text doubleValue];
+    farmer.combustibleConsumido = [self.consumoCombutible.text doubleValue];
+    farmer.cantidadMasaComposte = [self.cantidadComposte.text doubleValue];
+    farmer.cantidadMasaBiogas = [self.cantidadMasaBiogas.text doubleValue];
+    farmer.cabezaGanado = [self.cabezasGanado.text doubleValue];
+    farmer.cantidadNitrogeno = [self.nitrogenoAplicado.text doubleValue];
+    farmer.ureaAplicada = [self.ureaAplicada.text doubleValue];
+    [farmer setCombustibleConsumido:farmer.combustibleConsumido withTipo:self.tipoCombustible.text];
+    [farmer calculateCarbonoTotal];
     [self performSegueWithIdentifier:@"showDetails" sender:self];
 }
 
+- (BOOL)areQuestionsAnswered {
+    for (UITextField *textField in self.answerCollections) {
+        if ([textField.text isEqualToString:@""]) {
+            return false;
+        }
+    }
+    return true;
+}
 @end

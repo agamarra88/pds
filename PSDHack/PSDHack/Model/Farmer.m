@@ -54,6 +54,16 @@
     self.ureaAplicadaTotal = ureaAplicada * 0.2 * 44/12;
 }
 
+- (void)setUreaAplicadaTotal:(double)ureaAplicadaTotal {
+    _ureaAplicadaTotal = ureaAplicadaTotal;
+    self.fertilizacionTotal = self.ureaAplicadaTotal + self.cantidadNitrogenoTotal;
+}
+
+- (void)setCantidadNitrogenoTotal:(double)cantidadNitrogenoTotal {
+    _cantidadNitrogenoTotal = cantidadNitrogenoTotal;
+    self.fertilizacionTotal = self.ureaAplicadaTotal + self.cantidadNitrogenoTotal;
+}
+
 - (void)setCantidadMasaBiogasTotal:(double)cantidadMasaBiogasTotal {
     _cantidadMasaBiogasTotal = cantidadMasaBiogasTotal;
     self.tratamiendoResiduosTotal = self.cantidadMasaBiogasTotal + self.cantidadMasaComposteTotal;
