@@ -17,6 +17,11 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *farmingSystemPickerView;
 @property (strong, nonatomic) NSString *region;
 
+@property (weak, nonatomic) IBOutlet UILabel *latitudeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *longitudeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *addressLabel;
+
+
 //action
 
 @end

@@ -96,6 +96,24 @@
                                     <segue destination="uYH-M7-F4M" kind="show" identifier="ShowQuestions" id="gb9-85-3pF"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="latitude" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="134-vc-hk6">
+                                <rect key="frame" x="113" y="174" width="166" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="longitude" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDL-wd-hXt">
+                                <rect key="frame" x="113" y="203" width="166" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lL-DR-ZYP">
+                                <rect key="frame" x="11" y="232" width="293" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -114,7 +132,10 @@
                     <navigationItem key="navigationItem" id="m1f-Fp-b0m"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="addressLabel" destination="2lL-DR-ZYP" id="Nih-9L-foT"/>
                         <outlet property="farmingSystemPickerView" destination="4Oi-90-ktQ" id="G0X-Ui-gTK"/>
+                        <outlet property="latitudeLabel" destination="134-vc-hk6" id="CNi-68-1js"/>
+                        <outlet property="longitudeLabel" destination="RDL-wd-hXt" id="hB2-bb-nxu"/>
                         <outlet property="regionLabel" destination="QEY-an-0jE" id="sRU-vg-3jj"/>
                     </connections>
                 </viewController>
