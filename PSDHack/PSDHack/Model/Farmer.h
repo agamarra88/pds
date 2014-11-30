@@ -14,6 +14,8 @@
 
 @property (nonatomic, strong) NSString *region;
 @property (nonatomic, strong) NSString *farmSystem;
+@property (nonatomic) double latitude;
+@property (nonatomic) double longitude;
 
 @property (nonatomic, strong) NSString *tipoCombustible;
 @property (nonatomic) double combustibleConsumido;

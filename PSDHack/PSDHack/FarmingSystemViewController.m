@@ -144,6 +144,8 @@
         Farmer *farmer = [Farmer shareFarmer];
         farmer.farmSystem = farmSystems[row];
         farmer.region = self.region;
+        farmer.latitude = [self.latitudeLabel.text doubleValue];
+        farmer.longitude = [self.longitudeLabel.text doubleValue];
     }
 }
 
@@ -195,7 +197,6 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
 {
-    NSLog(@"didUpdateToLocation: %@", newLocation);
     CLLocation *currentLocation = newLocation;
     
     if (currentLocation != nil) {
@@ -204,9 +205,7 @@
     }
     
     // Reverse Geocoding
-    NSLog(@"Resolving the Address");
     [geocoder reverseGeocodeLocation:currentLocation completionHandler:^(NSArray *placemarks, NSError *error) {
-        NSLog(@"Found placemarks: %@, error: %@", placemarks, error);
         if (error == nil && [placemarks count] > 0) {
             placemark = [placemarks lastObject];
             _addressLabel.text = [NSString stringWithFormat:@"%@ %@\n%@ %@\n%@\n%@",
