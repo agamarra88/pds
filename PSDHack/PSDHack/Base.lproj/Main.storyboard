@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yXy-lU-swD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yXy-lU-swD">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -125,7 +125,6 @@
         <!--Questions Table View Controller-->
         <scene sceneID="3sI-FG-qzm">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tvw-RZ-knH" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="uYH-M7-F4M" customClass="QuestionsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="wkQ-zP-wqh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
@@ -468,6 +467,7 @@
                         <segue destination="L9M-nU-WFC" kind="show" identifier="showDetails" id="bfS-Cp-jzb"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tvw-RZ-knH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1064" y="267"/>
         </scene>
