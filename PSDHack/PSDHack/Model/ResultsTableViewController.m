@@ -35,76 +35,62 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-        return 2;
+        return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    NSString *sTitle;
     static NSString *CellIdentifier = @"cellName";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    _arrTratamientosDetalle = [_arrTratamientos[indexPath.row] componentsSeparatedByString:@";"];
+    _arrTratamientosDetalle = [_arrTratamientos[indexPath.section] componentsSeparatedByString:@";"];
     
-//    NSArray *aKeys = nil;
-//    NSArray *aValues = nil;
-    
-    //NSDictionary *daysWeather = nil;
-    
-//    switch (indexPath.section) {
-//        case 0: {
-//            aKeys = [_solicitud SolicBasicInfoKeys];
-//            aValues = [_solicitud SolicBasicInfoValues];
-//            break;
-//        }
-//        case 1: {
-//            //            NSArray *upcomingWeather = [self.weather upcomingWeather];
-//            //            daysWeather = upcomingWeather[indexPath.row];
-//            aKeys = [_solicitud SolicRequestInfoKeys];
-//            aValues = [_solicitud SolicRequestInfoValues];
-//            break;
-//        }
-//        case 2: {
-//            aKeys = [_solicitud SolicSourceInfoKeys];
-//            aValues = [_solicitud SolicSourceInfoValues];
-//            break;
-//        }
-//        case 3: {
-//            aKeys = [_solicitud SolicPaymentInfoKeys];
-//            aValues = [_solicitud SolicPaymentInfoValues];
-//            break;
-//        }
-//        default:
-//            break;
-//    }
-    cell.textLabel.text = @"titulo";
-    cell.detailTextLabel.text = @"detalle";
+    switch (indexPath.row) {
+        case 0: {
+            sTitle = @"Título:";
+            break;
+        }
+        case 1: {
+            sTitle = @"Factor RR:";
+            break;
+        }
+        case 2: {
+            sTitle = @"Distancia Euclídica:";
+            break;
+        }
+        default:
+            break;
+    }
+    cell.textLabel.text = sTitle;
+    cell.detailTextLabel.text = _arrTratamientosDetalle[indexPath.row];
     
     return cell;
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
-    NSString *sectionName;
-    sectionName = @"2222";
-    
-//    switch (section)
-//    {
-//        case 0:
-//            sectionName = NSLocalizedString(@"DATOS BÁSICOS DE LA SOLICITUD", @"mySectionName");
-//            break;
-//        case 1:
-//            sectionName = NSLocalizedString(@"1. DATOS DEL SOLICITANTE", @"myOtherSectionName");
-//            break;
-//        case 2:
-//            sectionName = NSLocalizedString(@"2. DATOS DEL DESTINATARIO", @"myOtherSectionName");
-//            break;
-//        case 3:
-//            sectionName = NSLocalizedString(@"3. DATOS DEL PAGO", @"myOtherSectionName");
-//            break;
-//        default:
-//            sectionName = @"";
-//            break;
-//    }
-    return sectionName;
-}
+//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+//{
+//    NSString *sectionName;
+//    sectionName = @"2222";
+//    
+////    switch (section)
+////    {
+////        case 0:
+////            sectionName = NSLocalizedString(@"DATOS BÁSICOS DE LA SOLICITUD", @"mySectionName");
+////            break;
+////        case 1:
+////            sectionName = NSLocalizedString(@"1. DATOS DEL SOLICITANTE", @"myOtherSectionName");
+////            break;
+////        case 2:
+////            sectionName = NSLocalizedString(@"2. DATOS DEL DESTINATARIO", @"myOtherSectionName");
+////            break;
+////        case 3:
+////            sectionName = NSLocalizedString(@"3. DATOS DEL PAGO", @"myOtherSectionName");
+////            break;
+////        default:
+////            sectionName = @"";
+////            break;
+////    }
+//    return sectionName;
+//}
 @end
