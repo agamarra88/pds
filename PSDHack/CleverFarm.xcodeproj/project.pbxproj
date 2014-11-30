@@ -117,6 +117,8 @@
 				69DF0EB61A2B31F600A09380 /* LaunchScreen.xib */,
 				69DF0ED91A2B71D000A09380 /* QuestionsTableViewController.h */,
 				69DF0EDA1A2B71D000A09380 /* QuestionsTableViewController.m */,
+				9E8D78101A2B888200004593 /* ResultsTableViewController.h */,
+				9E8D78111A2B888200004593 /* ResultsTableViewController.m */,
 			);
 			path = PSDHack;
 			sourceTree = "<group>";
@@ -315,6 +317,7 @@
 			files = (
 				69DF0EDE1A2B80AE00A09380 /* Farmer.m in Sources */,
 				69DF0ECF1A2B36AA00A09380 /* FarmingSystemViewController.m in Sources */,
+				9E8D78121A2B888200004593 /* ResultsTableViewController.m in Sources */,
 				69DF0EB01A2B31F600A09380 /* ViewController.m in Sources */,
 				69DF0EAD1A2B31F600A09380 /* AppDelegate.m in Sources */,
 				69DF0EAA1A2B31F600A09380 /* main.m in Sources */,
