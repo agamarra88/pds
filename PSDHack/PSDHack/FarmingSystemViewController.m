@@ -8,6 +8,7 @@
 
 #import "FarmingSystemViewController.h"
 #import "LandRegions.h"
+#import "Farmer.h"
 #import "QuestionsTableViewController.h"
 
 @interface FarmingSystemViewController ()
@@ -128,6 +129,10 @@
         NSArray *farmSystems = self.dictFarmSys[self.region];
         destinationVC.farmSystem = farmSystems[row];
         destinationVC.region = self.region;
+        
+        Farmer *farmer = [Farmer shareFarmer];
+        farmer.farmSystem = farmSystems[row];
+        farmer.region = self.region;
     }
 }
 

@@ -18,6 +18,7 @@
 		69DF0ECF1A2B36AA00A09380 /* FarmingSystemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DF0ECE1A2B36AA00A09380 /* FarmingSystemViewController.m */; };
 		69DF0ED31A2B3E6A00A09380 /* LandRegions.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DF0ED21A2B3E6A00A09380 /* LandRegions.m */; };
 		69DF0EDB1A2B71D000A09380 /* QuestionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DF0EDA1A2B71D000A09380 /* QuestionsTableViewController.m */; };
+		69DF0EDE1A2B80AE00A09380 /* Farmer.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DF0EDD1A2B80AE00A09380 /* Farmer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		69DF0ED41A2B598300A09380 /* Regions.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Regions.sqlite; sourceTree = "<group>"; };
 		69DF0ED91A2B71D000A09380 /* QuestionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionsTableViewController.h; sourceTree = "<group>"; };
 		69DF0EDA1A2B71D000A09380 /* QuestionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionsTableViewController.m; sourceTree = "<group>"; };
+		69DF0EDC1A2B80AE00A09380 /* Farmer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Farmer.h; sourceTree = "<group>"; };
+		69DF0EDD1A2B80AE00A09380 /* Farmer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Farmer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,8 @@
 			children = (
 				69DF0ED11A2B3E6A00A09380 /* LandRegions.h */,
 				69DF0ED21A2B3E6A00A09380 /* LandRegions.m */,
+				69DF0EDC1A2B80AE00A09380 /* Farmer.h */,
+				69DF0EDD1A2B80AE00A09380 /* Farmer.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -304,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69DF0EDE1A2B80AE00A09380 /* Farmer.m in Sources */,
 				69DF0ECF1A2B36AA00A09380 /* FarmingSystemViewController.m in Sources */,
 				69DF0EB01A2B31F600A09380 /* ViewController.m in Sources */,
 				69DF0EAD1A2B31F600A09380 /* AppDelegate.m in Sources */,
