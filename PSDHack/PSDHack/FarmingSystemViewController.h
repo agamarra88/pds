@@ -7,14 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface FarmingSystemViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+@interface FarmingSystemViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate, CLLocationManagerDelegate>
 
 //properties
 
 @property (weak, nonatomic) IBOutlet UILabel *regionLabel;
 @property (weak, nonatomic) IBOutlet UIPickerView *farmingSystemPickerView;
 @property (strong, nonatomic) NSString *region;
+
+@property (weak, nonatomic) IBOutlet UILabel *latitudeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *longitudeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *addressLabel;
+
 
 //action
 
