@@ -11,8 +11,10 @@
 @interface FarmingSystemViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
 //properties
-@property (weak, nonatomic) IBOutlet UIPickerView *regionPickerView;
+
+@property (weak, nonatomic) IBOutlet UILabel *regionLabel;
 @property (weak, nonatomic) IBOutlet UIPickerView *farmingSystemPickerView;
+@property (strong, nonatomic) NSString *region;
 
 //action
 

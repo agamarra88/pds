@@ -16,6 +16,8 @@
 		69DF0EB81A2B31F600A09380 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69DF0EB61A2B31F600A09380 /* LaunchScreen.xib */; };
 		69DF0EC41A2B31F600A09380 /* PSDHackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DF0EC31A2B31F600A09380 /* PSDHackTests.m */; };
 		69DF0ECF1A2B36AA00A09380 /* FarmingSystemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DF0ECE1A2B36AA00A09380 /* FarmingSystemViewController.m */; };
+		69DF0ED31A2B3E6A00A09380 /* LandRegions.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DF0ED21A2B3E6A00A09380 /* LandRegions.m */; };
+		69DF0EDB1A2B71D000A09380 /* QuestionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DF0EDA1A2B71D000A09380 /* QuestionsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,11 @@
 		69DF0EC31A2B31F600A09380 /* PSDHackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSDHackTests.m; sourceTree = "<group>"; };
 		69DF0ECD1A2B36AA00A09380 /* FarmingSystemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FarmingSystemViewController.h; sourceTree = "<group>"; };
 		69DF0ECE1A2B36AA00A09380 /* FarmingSystemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FarmingSystemViewController.m; sourceTree = "<group>"; };
+		69DF0ED11A2B3E6A00A09380 /* LandRegions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandRegions.h; sourceTree = "<group>"; };
+		69DF0ED21A2B3E6A00A09380 /* LandRegions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandRegions.m; sourceTree = "<group>"; };
+		69DF0ED41A2B598300A09380 /* Regions.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Regions.sqlite; sourceTree = "<group>"; };
+		69DF0ED91A2B71D000A09380 /* QuestionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionsTableViewController.h; sourceTree = "<group>"; };
+		69DF0EDA1A2B71D000A09380 /* QuestionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +98,8 @@
 		69DF0EA61A2B31F600A09380 /* PSDHack */ = {
 			isa = PBXGroup;
 			children = (
+				69DF0EA71A2B31F600A09380 /* Supporting Files */,
+				69DF0ED01A2B3E4500A09380 /* Model */,
 				69DF0EAB1A2B31F600A09380 /* AppDelegate.h */,
 				69DF0EAC1A2B31F600A09380 /* AppDelegate.m */,
 				69DF0EAE1A2B31F600A09380 /* ViewController.h */,
@@ -100,7 +109,8 @@
 				69DF0EB11A2B31F600A09380 /* Main.storyboard */,
 				69DF0EB41A2B31F600A09380 /* Images.xcassets */,
 				69DF0EB61A2B31F600A09380 /* LaunchScreen.xib */,
-				69DF0EA71A2B31F600A09380 /* Supporting Files */,
+				69DF0ED91A2B71D000A09380 /* QuestionsTableViewController.h */,
+				69DF0EDA1A2B71D000A09380 /* QuestionsTableViewController.m */,
 			);
 			path = PSDHack;
 			sourceTree = "<group>";
@@ -108,6 +118,7 @@
 		69DF0EA71A2B31F600A09380 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				69DF0ED41A2B598300A09380 /* Regions.sqlite */,
 				69DF0EA81A2B31F600A09380 /* Info.plist */,
 				69DF0EA91A2B31F600A09380 /* main.m */,
 			);
@@ -129,6 +140,15 @@
 				69DF0EC21A2B31F600A09380 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69DF0ED01A2B3E4500A09380 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				69DF0ED11A2B3E6A00A09380 /* LandRegions.h */,
+				69DF0ED21A2B3E6A00A09380 /* LandRegions.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9055692FE7DA7F03715D5402 /* Frameworks */ = {
@@ -199,6 +219,7 @@
 				TargetAttributes = {
 					69DF0EA31A2B31F600A09380 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = H9MAL9P855;
 					};
 					69DF0EBC1A2B31F600A09380 = {
 						CreatedOnToolsVersion = 6.1;
@@ -287,6 +308,8 @@
 				69DF0EB01A2B31F600A09380 /* ViewController.m in Sources */,
 				69DF0EAD1A2B31F600A09380 /* AppDelegate.m in Sources */,
 				69DF0EAA1A2B31F600A09380 /* main.m in Sources */,
+				69DF0ED31A2B3E6A00A09380 /* LandRegions.m in Sources */,
+				69DF0EDB1A2B71D000A09380 /* QuestionsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,9 +434,12 @@
 			baseConfigurationReference = 512BC4AAE9DBA87B79C32899 /* Pods-PSDHack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PSDHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -422,9 +448,12 @@
 			baseConfigurationReference = 64DF60E27858E8CC08259A3C /* Pods-PSDHack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PSDHack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
