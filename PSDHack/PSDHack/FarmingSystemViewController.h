@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface FarmingSystemViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+@interface FarmingSystemViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate, CLLocationManagerDelegate>
 
 //properties
 
