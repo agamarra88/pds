@@ -19,6 +19,7 @@
 		69DF0ED31A2B3E6A00A09380 /* LandRegions.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DF0ED21A2B3E6A00A09380 /* LandRegions.m */; };
 		69DF0EDB1A2B71D000A09380 /* QuestionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DF0EDA1A2B71D000A09380 /* QuestionsTableViewController.m */; };
 		69DF0EDE1A2B80AE00A09380 /* Farmer.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DF0EDD1A2B80AE00A09380 /* Farmer.m */; };
+		69DF0EE11A2BA18600A09380 /* ResultTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DF0EE01A2BA18600A09380 /* ResultTableViewController.m */; };
 		9EC363B01A2B83680002CB50 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EC363AF1A2B83680002CB50 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,8 @@
 		69DF0EDA1A2B71D000A09380 /* QuestionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionsTableViewController.m; sourceTree = "<group>"; };
 		69DF0EDC1A2B80AE00A09380 /* Farmer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Farmer.h; sourceTree = "<group>"; };
 		69DF0EDD1A2B80AE00A09380 /* Farmer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Farmer.m; sourceTree = "<group>"; };
+		69DF0EDF1A2BA18600A09380 /* ResultTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultTableViewController.h; sourceTree = "<group>"; };
+		69DF0EE01A2BA18600A09380 /* ResultTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultTableViewController.m; sourceTree = "<group>"; };
 		9EC363AF1A2B83680002CB50 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -117,8 +120,8 @@
 				69DF0EB61A2B31F600A09380 /* LaunchScreen.xib */,
 				69DF0ED91A2B71D000A09380 /* QuestionsTableViewController.h */,
 				69DF0EDA1A2B71D000A09380 /* QuestionsTableViewController.m */,
-				9E8D78101A2B888200004593 /* ResultsTableViewController.h */,
-				9E8D78111A2B888200004593 /* ResultsTableViewController.m */,
+				69DF0EDF1A2BA18600A09380 /* ResultTableViewController.h */,
+				69DF0EE01A2BA18600A09380 /* ResultTableViewController.m */,
 			);
 			path = PSDHack;
 			sourceTree = "<group>";
@@ -317,9 +320,9 @@
 			files = (
 				69DF0EDE1A2B80AE00A09380 /* Farmer.m in Sources */,
 				69DF0ECF1A2B36AA00A09380 /* FarmingSystemViewController.m in Sources */,
-				9E8D78121A2B888200004593 /* ResultsTableViewController.m in Sources */,
 				69DF0EB01A2B31F600A09380 /* ViewController.m in Sources */,
 				69DF0EAD1A2B31F600A09380 /* AppDelegate.m in Sources */,
+				69DF0EE11A2BA18600A09380 /* ResultTableViewController.m in Sources */,
 				69DF0EAA1A2B31F600A09380 /* main.m in Sources */,
 				69DF0ED31A2B3E6A00A09380 /* LandRegions.m in Sources */,
 				69DF0EDB1A2B71D000A09380 /* QuestionsTableViewController.m in Sources */,

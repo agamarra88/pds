@@ -8,6 +8,7 @@
 
 #import "QuestionsTableViewController.h"
 #import "Farmer.h"
+#import <AFNetworking/AFNetworking.h>
 
 @interface QuestionsTableViewController ()
 
@@ -61,6 +62,14 @@
     [farmer setCombustibleConsumido:farmer.combustibleConsumido withTipo:self.tipoCombustible.text];
     [farmer calculateCarbonoTotal];
     [self performSegueWithIdentifier:@"showDetails" sender:self];
+    
+    //40.40.30.43
+    /*AFHTTPSessionManager *sessioManager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:@"40.40.30.43:9000"]];
+    [sessioManager GET:@"" parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"%@", error);
+    }];*/
 }
 
 - (BOOL)areQuestionsAnswered {
